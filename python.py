@@ -1,7 +1,27 @@
 import sys
-number = int(sys.argv[1])
-# (input ("Enter the number of which the user wants to print the multiplication table: "))      
-# We are using "for loop" to iterate the multiplication 10 times       
-print ("The Multiplication Table of: ", number)    
-for count in range(1, 11):      
-   print (number, 'x', count, '=', number * count)    
+nterms=int(sys.argv[1])
+
+
+# nterms = int(input("How many terms? "))
+
+
+n1, n2 = 0, 1
+count = 0
+
+
+if nterms <= 0:
+   print("Please enter a positive integer")
+
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
