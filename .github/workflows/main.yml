@@ -7,7 +7,6 @@ on:
         required: true
         default: 'how many terms do you want to printed' 
      
-  
 env:
   file: python.py 
   num_1: ${{ github.event.inputs.inpt }}
