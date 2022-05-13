@@ -1,10 +1,7 @@
-# Python program to check if the input number is odd or even.
-# A number is even if division by 2 gives a remainder of 0.
-# If the remainder is 1, it is an odd number.
-
 import sys
-num=int(input("Enter a number: "))
-if (num % 2) == 0:
-   print("{0} is Even".format(num))
-else:
-   print("{0} is Odd".format(num))
+number = int(sys.argv[1])
+# (input ("Enter the number of which the user wants to print the multiplication table: "))      
+# We are using "for loop" to iterate the multiplication 10 times       
+print ("The Multiplication Table of: ", number)    
+for count in range(1, 11):      
+   print (number, 'x', count, '=', number * count)    
