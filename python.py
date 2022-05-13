@@ -1,27 +1,10 @@
+# Python program to check if the input number is odd or even.
+# A number is even if division by 2 gives a remainder of 0.
+# If the remainder is 1, it is an odd number.
+
 import sys
-nterms=int(sys.argv[1])
-
-
-# nterms = int(input("How many terms? "))
-
-
-n1, n2 = 0, 1
-count = 0
-
-
-if nterms <= 0:
-   print("Please enter a positive integer")
-
-elif nterms == 1:
-   print("Fibonacci sequence upto",nterms,":")
-   print(n1)
-
+num=int(sys.argv[1])
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
 else:
-   print("Fibonacci sequence:")
-   while count < nterms:
-       print(n1)
-       nth = n1 + n2
-       # update values
-       n1 = n2
-       n2 = nth
-       count += 1
+   print("{0} is Odd".format(num))
